@@ -1,14 +1,57 @@
-@media screen and (max-width: 768px) {
 
-    h1,
-    .titulo,
-    .p-titulo,
-    .card {
+/* Media Queries para Tablets (modo paisagem) */
+@media screen and (max-width: 1024px) {
+    body {
+        padding-left: 30px;
+    }
+
+    .pilar, .pilar2 {
         width: 100%;
-        display: block;
     }
 
-    .pilar {
-        flex-direction: column;
+    h1 {
+        font-size: 40px;
     }
+
+    .card {
+        margin-right: 0;
+    }
+ 
+   
+}
+
+/* Media Queries para Tablets e Dispositivos Móveis */
+@media screen and (max-width: 768px) {
+    body {
+        padding-left: 10px;
+    }
+
+    .pilares-container {
+        display: grid;
+        justify-content: center;
+    }
+    
+    .pilar {
+        padding: 20px;
+        width: 45%;
+    
+    }
+    
+    
+    .pilares-container2 {
+        display: grid;
+        justify-content: center;
+    }
+    
+    .pilar2 {
+        padding: 20px;
+        width: 45%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+
+  
 }
